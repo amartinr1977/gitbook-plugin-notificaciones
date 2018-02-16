@@ -1,0 +1,22 @@
+{
+  "name": "gitbook-plugin-notificaciones",
+  "description": "Gitbook plugin to add notifications of type information, alert, task, etc.",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/davidmogar/gitbook-plugin-notificaciones",
+  "version": "0.0.1",
+  "engines": {
+    "gitbook": ">2.5.0"
+  },
+  "author": {
+    "name": "Arturo Martín Romero",
+    "email": "amartinromero@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/amartinr1977/gitbook-plugin-notificaciones/issues"
+  },
+  "gitbook": {
+    "properties": {
+    }
+  }
+}
