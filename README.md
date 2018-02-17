@@ -1,8 +1,8 @@
-# Panel plugin for GitBook
+# Notificaciones plugin for GitBook
 
-Gitbook is a great tool but specially the cli version is lacking some features. The aim of this plugin is adding one that is really needed: Panels.
+Este plugin va a permitir al usuario final introducir cuadros de dialogo personalizados con un aspecto más atractivo que el que permite el codigo '''mardown''' por defecto.
 
-## Cool, can I see it working?
+## ¿Qué aspecto tiene?
 
 The following image shows all the panels you can create:
 
@@ -13,13 +13,17 @@ The following image shows all the panels you can create:
 You only have to edit your book.json and modify it adding something like this:
 
 ```json
-"plugins" : [ "panel" ],
+{
+    "plugins": [
+        "myplugin@git+https://github.com/davidmogar/gitbook-plugin-notificaciones.git#0.0.1"
+    ]
+}
 ```
 
 Now, to define your panels you will have to add a content similar to the next one:
 
 ```
-{% panel %}
+{% notificacion %}
 Panel without title.
 {% endpanel %}
 

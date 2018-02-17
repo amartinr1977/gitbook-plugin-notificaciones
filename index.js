@@ -58,7 +58,7 @@ module.exports = {
   },
 
   blocks: {
-    mensaje: {
+    notificacion: {
       process: function (block) {
         var style_message = block.kwargs.style || 'default'; // Info, Alerta, Importante, Tarea, ...
         var n_task = block.kwargs.ntask; // Tarea: número de tarea a mostrar
@@ -72,7 +72,7 @@ module.exports = {
           return this
             .renderBlock('markdown', block.body)
             .then(function (renderedBody) {
-              return createPanel(style, title, renderedBody);
+              return createPanel(style_message, title, renderedBody);
             });
         }
       }
