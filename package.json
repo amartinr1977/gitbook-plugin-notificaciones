@@ -3,7 +3,7 @@
   "description": "Gitbook plugin to add notifications of type information, alert, task, etc.",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://github.com/davidmogar/gitbook-plugin-notificaciones",
+  "homepage": "https://github.com/amartinr1977/gitbook-plugin-notificaciones",
   "version": "0.0.1",
   "engines": {
     "gitbook": ">2.5.0"

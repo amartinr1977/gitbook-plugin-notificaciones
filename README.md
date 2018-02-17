@@ -15,7 +15,7 @@ You only have to edit your book.json and modify it adding something like this:
 ```json
 {
     "plugins": [
-        "myplugin@git+https://github.com/davidmogar/gitbook-plugin-notificaciones.git#0.0.1"
+        "myplugin@git+https://github.com/amartinr1977/gitbook-plugin-notificaciones.git#0.0.1"
     ]
 }
 ```
