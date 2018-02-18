@@ -13,7 +13,7 @@ module.exports = {
   blocks: {
     notificacion_info: {
       process: function (block) {
-        logo_info = '<img src="images/logoalerta-x80.png"></img>';
+        logo_info = '<img src="./assets/images/logoalerta-x80.png"></img>';
         formato_entrega = "Esto es el formato de entrega ...";
         requisitos = "Los requisitos van a ser ...";
         element = '<div class="">';
