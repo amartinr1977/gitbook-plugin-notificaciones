@@ -4,9 +4,9 @@ Este plugin va a permitir al usuario final introducir cuadros de dialogo persona
 
 ## ¿Qué aspecto tiene?
 
-The following image shows all the panels you can create:
+The following image shows all the notificacions you can create:
 
-![terminal themes](https://github.com/davidmogar/gitbook-plugin-panel/blob/resources/images/panels.png?raw=true)
+![terminal themes](https://github.com/davidmogar/gitbook-plugin-notificacion/blob/resources/images/notificacions.png?raw=true)
 
 ## How can I use this plugin?
 
@@ -20,32 +20,32 @@ You only have to edit your book.json and modify it adding something like this:
 }
 ```
 
-Now, to define your panels you will have to add a content similar to the next one:
+Now, to define your notificacions you will have to add a content similar to the next one:
 
 ```
 {% notificacion %}
-Panel without title.
-{% endpanel %}
+notificacion without title.
+{% endnotificacion %}
 
-{% panel title="This is a panel with title" %}
-Panel with title and default style.
-{% endpanel %}
+{% notificacion title="This is a notificacion with title" %}
+notificacion with title and default style.
+{% endnotificacion %}
 
-{% panel style="danger", title="This is a danger panel" %}
-Panel with title and danger style.
-{% endpanel %}
+{% notificacion style="danger", title="This is a danger notificacion" %}
+notificacion with title and danger style.
+{% endnotificacion %}
 
-{% panel style="info", title="This is an info panel" %}
-Panel with title and info style.
-{% endpanel %}
+{% notificacion style="info", title="This is an info notificacion" %}
+notificacion with title and info style.
+{% endnotificacion %}
 
-{% panel style="success", title="This is a success panel" %}
-Panel with title and success style.
-{% endpanel %}
+{% notificacion style="success", title="This is a success notificacion" %}
+notificacion with title and success style.
+{% endnotificacion %}
 
-{% panel style="warning", title="This is a warning panel" %}
-Panel with title and warning style.
-{% endpanel %}
+{% notificacion style="warning", title="This is a warning notificacion" %}
+notificacion with title and warning style.
+{% endnotificacion %}
 ```
 
-Just choose the panel you want and add it! Awesome right?
+Just choose the notificacion you want and add it! Awesome right?
