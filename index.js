@@ -15,7 +15,7 @@ module.exports = {
     notificacion_task: {
       process: function (block) {
         ruta_base = "https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master";
-        logo_aviso = '<img src=' + ruta_base + '"/assets/images/logobombilla-x80.png?raw=true"></img>';
+        logo_aviso = '<img src="' + ruta_base + '/assets/images/logobombilla-x80.png?raw=true"></img>';
         logo_texto = 'Tarea</br>' + block.kwargs.numexer;
 
         element = '<div class="contenedor contenedor-task">';
