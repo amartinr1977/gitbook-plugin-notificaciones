@@ -59,7 +59,7 @@ module.exports = {
         logo_texto = '¡¡Importante!!';
         
         element = '<div class="contenedor">';
-        element += '<div class="image">' + logo_alert + '</br><b><tt>' + logo_texto + '</tt></b></div>';
+        element += '<div class="image">' + logo_lupa + '</br><b><tt>' + logo_texto + '</tt></b></div>';
         element += '<div class="contenedor-titulo"><div class="titulo titulo-lupa"><b><tt>' + block.kwargs.title + '</tt></b></div></div>';
         element += '<div class="contenido">' + block.body + '</div>';
         element += '</div>';
