@@ -6,11 +6,39 @@ module.exports = {
 
     css: [
       'icons.css',
-      'panel.css'
+      'panel.css',
+      'notificaciones.css'
     ]
   },
 
   blocks: {
+    notificacion_important: {
+      process: function (block) {
+        ruta_base = "https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master";
+        logo_lupa = '<img src=' + ruta_base + '"/assets/images/logolupa-x80.png?raw=true"></img>';
+        
+        element = '<div class="contenedor">';
+        element += '<div class="image">' + logo_lupa + '</div>';
+        element += '<div class="contenedor-titulo"><div class="titulo">' + block.kwargs.title + '</div></div>';
+        element += '<div class="contenido">' + block.body + '</div>';
+        element += '</div>';
+
+        return element;
+      }
+    },
+    notificacion_alert: {
+      process: function (block) {
+        logo_alert = '<img src="https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/logoalerta-x80.png?raw=true"></img>';
+        
+        element = '<div class="contenedor">';
+        element += '<div class="image">' + logo_alert + '</div>';
+        element += '<div class="contenedor-titulo"><div class="titulo">' + block.kwargs.title + '</div></div>';
+        element += '<div class="contenido">' + block.body + '</div>';
+        element += '</div>';
+
+        return element;
+      }
+    },
     notificacion_info: {
       process: function (block) {
         logo_info = '<img src="https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/logoalerta-x80.png?raw=true"></img>';
