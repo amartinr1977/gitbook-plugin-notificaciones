@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "homepage": "https://github.com/amartinr1977/gitbook-plugin-notificaciones",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "gitbook": ">2.5.0"
   },
