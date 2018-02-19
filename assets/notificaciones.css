@@ -21,7 +21,7 @@
     border-radius: 5px;
     background-color: #ffff99;
     text-align: center;
-    font-size: 90%
+    font-size: 90%;
 }
 
 .contenedor-titulo {
@@ -38,6 +38,7 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 90%;
+    font-size: 150%;
 }
 
 .titulo-alert {
@@ -64,9 +65,18 @@
     text-align: justify;
 }
 
+.requisitos {
+    font-size: 70%;
+}
+
+.textoreq {
+    color: brown;
+}
+
 .formato_entrega {
     background-color: white;
     color: #555555;
     margin-left: 20px; margin-right: 20px; margin-bottom: 20px;
     padding: 10px;
+    font-size: 90%;
 }

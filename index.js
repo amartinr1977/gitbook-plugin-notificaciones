@@ -21,10 +21,10 @@ module.exports = {
         element = '<div class="contenedor contenedor-task">';
         // Indicamos el logo o imagen de la notificación relativa a: Tarea
         element += '<div class="image">' + logo_aviso + '</br><b><tt>' + logo_texto + '</tt></b></div>';
-        element += '<div class="contenedor-titulo"><div class="titulo titulo-ejercicio"><tt>' + block.kwargs.title + '</tt>';
-        element += '<div class="requisitos" style="font-size: 70%;">';
+        element += '<div class="contenedor-titulo"><div class="titulo titulo-ejercicio"><b><tt>' + block.kwargs.title + '</tt></b>';
+        element += '<div class="requisitos">';
         // Establecemos los Requisitos necesarios para realizar la tarea
-        element += '<b><i><tt>Requisitos: <span style=" color: brown;">' + block.kwargs.req + '</span>';
+        element += '<b><i><tt>Requisitos: <span class="textoreq">' + block.kwargs.req + '</span>';
         element += '</b></i></tt></div>';
         element += '</div></div>';
         // Agregamos el cuerpo o contenido de la tarea a realizar
@@ -40,7 +40,7 @@ module.exports = {
     notificacion_didyouknow: {
       process: function (block) {
         ruta_base = "https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master";
-        logo_aviso = '<img src=' + ruta_base + '"/assets/images/logoaviso-x80.png?raw=true"></img>';
+        logo_aviso = '<img src="' + ruta_base + '/assets/images/logoaviso-x80.png?raw=true"></img>';
         logo_texto = '¿¿Sabías qué??';
 
         element = '<div class="contenedor">';
