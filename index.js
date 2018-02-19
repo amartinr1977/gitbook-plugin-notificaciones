@@ -45,7 +45,7 @@ module.exports = {
 
         element = '<div class="contenedor">';
         element += '<div class="image">' + logo_aviso + '</br><b><tt>' + logo_texto + '</tt></b></div>';
-        element += '<div class="contenedor-titulo"><div class="titulo titulo-aviso"><tt>' + block.kwargs.title + '</tt></div></div>';
+        element += '<div class="contenedor-titulo"><div class="titulo titulo-aviso"><b><tt>' + block.kwargs.title + '</tt></b></div></div>';
         element += '<div class="contenido">' + block.body + '</div>';
         element += '</div>';
 
@@ -55,12 +55,12 @@ module.exports = {
     notificacion_important: {
       process: function (block) {
         ruta_base = "https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master";
-        logo_lupa = '<img src=' + ruta_base + '"/assets/images/logolupa-x80.png?raw=true"></img>';
+        logo_lupa = '<img src="' + ruta_base + '/assets/images/logolupa-x80.png?raw=true"></img>';
         logo_texto = '¡¡Importante!!';
         
         element = '<div class="contenedor">';
         element += '<div class="image">' + logo_alert + '</br><b><tt>' + logo_texto + '</tt></b></div>';
-        element += '<div class="contenedor-titulo"><div class="titulo titulo-lupa"><tt>' + block.kwargs.title + '</tt></div></div>';
+        element += '<div class="contenedor-titulo"><div class="titulo titulo-lupa"><b><tt>' + block.kwargs.title + '</tt></b></div></div>';
         element += '<div class="contenido">' + block.body + '</div>';
         element += '</div>';
 
@@ -74,7 +74,7 @@ module.exports = {
 
         element = '<div class="contenedor">';
         element += '<div class="image">' + logo_alert + '</br><b><tt>' + logo_texto + '</tt></b></div>';
-        element += '<div class="contenedor-titulo"><div class="titulo titulo-alert"><tt>' + block.kwargs.title + '</tt></div></div>';
+        element += '<div class="contenedor-titulo"><div class="titulo titulo-alert"><b><tt>' + block.kwargs.title + '</tt></b></div></div>';
         element += '<div class="contenido">' + block.body + '</div>';
         element += '</div>';
 
@@ -89,7 +89,7 @@ module.exports = {
         element = '<div class="">';
         element += '<table>';
         element += '<tr>';
-        element += '<td rowspan="3">' + logo_info + '<br>' + block.kwargs.numejer + '</td>';
+        element += '<td rowspan="3">' + logo_info + '<br>' + block.kwargs.numexer + '</td>';
         element += '<td>' + block.kwargs.title + '</td>';
         element += '</tr>';
         element += '<tr>';

@@ -4,48 +4,48 @@ Este plugin va a permitir al usuario final introducir cuadros de dialogo persona
 
 ## ¿Qué aspecto tiene?
 
-The following image shows all the notificacions you can create:
+Las siguientes imágenes y trozos de código muestran como se configuraría una notificación en tu **GitBook**:
 
-![terminal themes](https://github.com/davidmogar/gitbook-plugin-notificacion/blob/resources/images/notificacions.png?raw=true)
+![Ejemplo de Notificación de Tipo Tarea](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_task-example.png?raw=true)
 
-## How can I use this plugin?
+## ¿Cómo hacer uso del Plugin?
 
-You only have to edit your book.json and modify it adding something like this:
+Para hacer uso de este **Plugin de GitBook** tan sólo tienes que editar el archivo **book.json** de tu GitBook y añadir el siguiente campo:
 
 ```json
 {
     "plugins": [
-        "myplugin@git+https://github.com/amartinr1977/gitbook-plugin-notificaciones.git#0.0.1"
+        "notificaciones"
     ]
 }
 ```
 
-Now, to define your notificacions you will have to add a content similar to the next one:
+Una vez configurado el archivo anterior tan sólo será necesario hacer uso del plugin como se muestra a continuación, dependiendo del tipo de dialogo o notificación a mostrar.
+
+### Ejemplos de uso: Notificación de tipo Tarea
 
 ```
-{% notificacion %}
-notificacion without title.
-{% endnotificacion %}
+{% notificacion_task title="Título de la Tarea", 
+    numexer="1.1.2", 
+    req="Requisitos para realizar la Tarea",
+    formatoentrega="El formato de entraga de la solución del ejercicio debe ser ..." %}
+La tarea a realizar consiste en lo que indicaremos en el cuerpo de la notificación.  Por ejemplo, podemos poner una lista de acciones a realizar, haciendo uso de una lista ordenada o desordenada mediante lenguaje <b>HTML/CSS</b>.  En el caso de una lista ordenada el aspecto que se mostraría es el siguiente:
+<br/>
+<ol>
+<li>Deberás hacer <b>una captura de pantalla</b> de ...</li>
+<li>Deberás <b>registrarte</b> en ...</li>
+</ol>
+<br/>
+O una desordenada:
+<br/>
+<ul>
+<li>Deberás llevar a cabo ...</li>
+<li>Y por último ...</li>
+</ul>
 
-{% notificacion title="This is a notificacion with title" %}
-notificacion with title and default style.
-{% endnotificacion %}
-
-{% notificacion style="danger", title="This is a danger notificacion" %}
-notificacion with title and danger style.
-{% endnotificacion %}
-
-{% notificacion style="info", title="This is an info notificacion" %}
-notificacion with title and info style.
-{% endnotificacion %}
-
-{% notificacion style="success", title="This is a success notificacion" %}
-notificacion with title and success style.
-{% endnotificacion %}
-
-{% notificacion style="warning", title="This is a warning notificacion" %}
-notificacion with title and warning style.
-{% endnotificacion %}
+{% endnotificacion_task %}
 ```
 
-Just choose the notificacion you want and add it! Awesome right?
+Su aspecto resultante sería:
+
+![Ejemplo de Notificación de Tipo Tarea](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_task-example.png?raw=true)
