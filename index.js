@@ -5,8 +5,6 @@ module.exports = {
     assets: './assets',
 
     css: [
-      'icons.css',
-      'panel.css',
       'notificaciones.css'
     ]
   },

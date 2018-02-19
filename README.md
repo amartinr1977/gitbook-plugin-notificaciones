@@ -1,4 +1,4 @@
-# Notificaciones plugin for GitBook
+# Plugin for GitBook: Notificaciones 
 
 Este plugin va a permitir al usuario final introducir cuadros de dialogo o notificaciones personalizadas con un aspecto más atractivo que el que permite el codigo **mardown** por defecto.
 
@@ -53,7 +53,7 @@ Su aspecto resultante sería:
 
 ![Ejemplo de Notificación de Tipo Tarea](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_task-example.png?raw=true)
 
-### Notificación de tipo Alerta
+### Notificación de tipo _Alerta_
 
 El código a usar en **GitBook** para hecer uso de este diálogo del **Plugin** sería uno similar al siguiente:
 
@@ -79,5 +79,18 @@ Este diálogo puede servirnos para enfatizar algo que consideramos que puede ser
 
 Su aspecto resultante sería:
 
-![Ejemplo de Notificación de Tipo Alerta](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_didyouknow-example.png?raw=true)
+![Ejemplo de Notificación de Tipo didyouknow](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_didyouknow-example.png?raw=true)
 
+### Notificación de tipo _Important_
+
+El código a usar en **GitBook** para hecer uso de este diálogo del **Plugin** sería uno similar al siguiente:
+
+```
+{% notificacion_important title="Lo más importante es que el Código es Libre" %}
+Este diálogo puede servirnos para <b>enfatizar los aspectos más importantes</b> de todo lo que le queremos mostrar al usuario final.  Al igual que en los diálogos o notificaciones anteriores puede hacerse uso de etiquetado <b>HTML/CSS</b> para mejorar el aspecto del cuerpo del contenido de la notificación.
+{% endnotificacion_important %}
+```
+
+Su aspecto resultante sería:
+
+![Ejemplo de Notificación de Tipo Importante](https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/notificacion_important-example.png?raw=true)
