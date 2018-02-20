@@ -68,7 +68,7 @@ module.exports = {
     notificacion_alert: {
       process: function (block) {
         logo_alert = '<img src="https://github.com/amartinr1977/gitbook-plugin-notificaciones/blob/master/assets/images/logoalerta-x80.png?raw=true"></img>';
-        logo_texto = '¡¡Aviso!!';
+        logo_texto = '¡¡' + block.kwargs.logotext + '!!';
 
         element = '<div class="contenedor">';
         element += '<div class="image">' + logo_alert + '</br><b><tt>' + logo_texto + '</tt></b></div>';
