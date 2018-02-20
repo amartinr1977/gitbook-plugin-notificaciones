@@ -58,7 +58,7 @@ Su aspecto resultante sería:
 El código a usar en **GitBook** para hecer uso de este diálogo del **Plugin** sería uno similar al siguiente:
 
 ```
-{% notificacion_alert title="¡¡Título de la Alerta!!" %}
+{% notificacion_alert title="¡¡Título de la Alerta!!", logotext="¡¡Aviso!!" %}
 El texto que se mostrará en la alerta será el que indiquemos en el cuerpo de la notificación.  Este tipo de diálogo o notificación puede resultar útil cuando queremos advertir a un usuario de algún aspecto que estemos tratando.
 {% endnotificacion_alert %}
 ```
